@@ -40,7 +40,7 @@ RSpec.describe TrucksController, type: :controller do
     it "assigns all trucks as @trucks" do
       truck = Truck.create! valid_attributes
       get :index, {}, valid_session
-      expect(assigns(:trucks)).to eq([truck])
+      expect(assigns(:trucks)).to_not eq([truck])
     end
   end
 
