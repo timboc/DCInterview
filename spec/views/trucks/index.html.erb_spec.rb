@@ -10,5 +10,6 @@ RSpec.describe "trucks/index", type: :view do
 
   it "renders a list of trucks" do
     render
+    expect(2).to be(3)
   end
 end
