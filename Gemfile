@@ -47,5 +47,8 @@ end
 
 gem 'rspec-rails', :group => [:development, :test]
 gem 'capybara'
-gem 'codeclimate-test-reporter', group: :test, require: nil
 
+group :test do
+  gem 'simplecov'
+  gem 'codeclimate-test-reporter'
+end
