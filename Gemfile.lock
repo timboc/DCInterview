@@ -113,6 +113,10 @@ GEM
       thor (>= 0.18.1, < 2.0)
     rake (11.3.0)
     rdoc (4.3.0)
+    rspec (3.3.0)
+      rspec-core (~> 3.3.0)
+      rspec-expectations (~> 3.3.0)
+      rspec-mocks (~> 3.3.0)
     rspec-core (3.3.2)
       rspec-support (~> 3.3.0)
     rspec-expectations (3.3.1)
@@ -184,7 +188,9 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   rails (= 4.2.6)
+  rspec
   rspec-rails
+  rspec-support
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
   simplecov
