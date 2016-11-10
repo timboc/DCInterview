@@ -12,12 +12,16 @@ RSpec.describe "categories/show", type: :view do
       category_products.push(Product.new(category_id: @category.id, name: "Product #{n}" ))
     end
 
-    @category_products = category_products
+    @category_products = Kaminari.paginate_array(category_products).page.per(5)
   end
 
   it "renders attributes in <p>" do
     render
     expect(rendered).to match(/Product 1/)
+  end
+
+  it "has two pages" do
+    skip("Implement tests for paging")
   end
 end
 

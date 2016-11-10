@@ -50,9 +50,9 @@ group :development do
   gem 'spring'
 end
 
-
-
 group :test do
   gem 'simplecov'
   gem 'codeclimate-test-reporter'
 end
+
+gem 'kaminari'
