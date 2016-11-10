@@ -1,9 +1,15 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @category.name %>
-</p>
-
-<%= link_to 'Edit', edit_category_path(@category) %> |
+<h1><%= @category_name %> </h1>
+<table class="table">
+  <thead>
+  <tr> <th>Products </th></tr>
+  <tbody>
+  <% @category_products.each do |product| %>
+      <tr>
+        <td><%= link_to product.name, product %></td>
+      </tr>
+  <% end %>
+  </tbody>
+</table>
 <%= link_to 'Back', categories_path %>
