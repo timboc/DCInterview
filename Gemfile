@@ -56,3 +56,7 @@ group :test do
 end
 
 gem 'kaminari'
+gem 'simple-navigation'
+gem 'simple-navigation-bootstrap'
+gem 'bootstrap-sass'
+gem 'autoprefixer-rails'

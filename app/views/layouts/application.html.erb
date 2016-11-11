@@ -8,7 +8,15 @@
 </head>
 <body>
 
-<%= yield %>
+<nav class="navbar navbar-inverse">
+  <div class="nav">
+    <%= render_navigation(expand_all: true) %>
+  </div>
+</nav>
+
+<div>
+  <%= yield %>
+</div>
 
 </body>
 </html>
